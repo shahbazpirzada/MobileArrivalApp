@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#DA5F6A"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dialog_success" />
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:text="You have successfully arrived"
+        android:textColor="#ff000000"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_yes"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/main_green_stroke_color"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="OkPress"
+        android:text="OK"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>
